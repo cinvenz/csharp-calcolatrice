@@ -1,14 +1,24 @@
 ﻿using csharp_calcolatrice;
 using System;
 
-//SOMMA INTERI
+//SOMMA NUMERI
 Console.WriteLine("dammi il primo numero:");
-int int1 = int.Parse(Console.ReadLine());
+double somma1 = double.Parse(Console.ReadLine());
 
 Console.WriteLine("dammi il secondo numero:");
-int int2 = int.Parse(Console.ReadLine());
+double somma2 = double.Parse(Console.ReadLine());
 
-int somma = CalcoliHelper.SommaNumeriInteri(int1, int2);
+double somma = CalcoliHelper.SommaNumeri(somma1, somma2);
 
-Console.WriteLine($"La somma tra {int1} e {int2} è {somma}");
+Console.WriteLine($"La somma tra {somma1} e {somma2} è {somma}");
 
+//DIFFERENZA NUMERI
+Console.WriteLine("dammi il primo numero:");
+double differenza1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("dammi il secondo numero:");
+double differenza2 = double.Parse(Console.ReadLine());
+
+double differenza = CalcoliHelper.DifferenzaNumeri(differenza1, differenza2);
+
+Console.WriteLine($"La differenza tra {differenza1} e {differenza2} è {differenza}");
