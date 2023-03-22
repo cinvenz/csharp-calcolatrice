@@ -41,4 +41,15 @@ double valoreassoluto1 = double.Parse(Console.ReadLine());
 
 double valoreassoluto = CalcoliHelper.ValoreAssoluto(valoreassoluto1);
 
-Console.WriteLine($"il valore assoluto è {valoreassoluto}");
+Console.WriteLine($"Il valore assoluto è {valoreassoluto}");
+
+//MINIMO NUMERI
+Console.WriteLine("dammi il primo numero:");
+double minimo1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("dammi il secondo numero:");
+double minimo2 = double.Parse(Console.ReadLine());
+
+double minimo = CalcoliHelper.MinimoNumero(minimo1, minimo2);
+
+Console.WriteLine($"Il minimo tra {minimo1} e {minimo2} è {minimo}");
