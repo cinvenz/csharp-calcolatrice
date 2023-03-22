@@ -22,3 +22,23 @@ double differenza2 = double.Parse(Console.ReadLine());
 double differenza = CalcoliHelper.DifferenzaNumeri(differenza1, differenza2);
 
 Console.WriteLine($"La differenza tra {differenza1} e {differenza2} è {differenza}");
+
+//MOLTIPLICAZIONE NUMERI
+Console.WriteLine("dammi il primo numero:");
+double moltiplicazione1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("dammi il secondo numero:");
+double moltiplicazione2 = double.Parse(Console.ReadLine());
+
+double moltiplicazione = CalcoliHelper.MoltiplicazioneNumeri(moltiplicazione1, moltiplicazione2);
+
+Console.WriteLine($"La moltiplicazione tra {moltiplicazione1} e {moltiplicazione2} è {differenza}");
+
+//VALORE ASSOLUTO NUMERI
+Console.WriteLine("dammi un numero:");
+
+double valoreassoluto1 = double.Parse(Console.ReadLine());
+
+double valoreassoluto = CalcoliHelper.ValoreAssoluto(valoreassoluto1);
+
+Console.WriteLine($"il valore assoluto è {valoreassoluto}");
