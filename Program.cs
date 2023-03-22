@@ -53,3 +53,14 @@ double minimo2 = double.Parse(Console.ReadLine());
 double minimo = CalcoliHelper.MinimoNumero(minimo1, minimo2);
 
 Console.WriteLine($"Il minimo tra {minimo1} e {minimo2} è {minimo}");
+
+//MASSIMO NUMERI
+Console.WriteLine("dammi il primo numero:");
+double massimo1 = double.Parse(Console.ReadLine());
+
+Console.WriteLine("dammi il secondo numero:");
+double massimo2 = double.Parse(Console.ReadLine());
+
+double massimo = CalcoliHelper.MinimoNumero(massimo1, massimo2);
+
+Console.WriteLine($"Il massimo tra {massimo1} e {massimo2} è {massimo}");
