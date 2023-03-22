@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
-//IL principio di programmazione per scrivere lo stesso metodo per tipi di parametro diversi è il Polimorfismo
+//IL principio di programmazione per scrivere lo stesso metodo per tipi di parametro diversi è il Polimorfismo in questo caso OVERLOADING
 
 
 namespace csharp_calcolatrice
@@ -142,5 +142,28 @@ namespace csharp_calcolatrice
                 }
             }
         }
+
+        public static double Potenza(double @base, double esponente)
+        {
+            if (esponente < 0)
+            {
+                return 1 / Potenza(@base, -esponente);
+            }
+
+            if (@base == 0 && esponente == 0)
+            {
+                return 1;
+            }
+
+            double result = 1;
+
+            for (double i = 0; i < esponente; i++)
+            {
+                result *= @base;
+            }
+
+            return result;
+        }
     }
 }
+
