@@ -6,18 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-//-Somma di due numeri interi ----------------------
-//- Somma di due numeri double --------------------
-//- Differenza tra due numeri interi ---------------
-//- Differenza tra due numeri double ------------------
-//- Moltiplicazione di due numeri interi ----------------
-//- Moltiplicazione di due numeri double -----------------
-//- Valore assoluto di un numero intero ------------------
-//- Valore assoluto di un numero double -------------------
-//- Minimo tra due numeri interi ------------------------
-//- Minimo tra due numeri double ------------------------ 
-//- Massimo tra due numeri interi ------------------------
-//- Massimo tra due numeri double -------------------------
+
+//IL principio di programmazione per scrivere lo stesso metodo per tipi di parametro diversi è il Polimorfismo
+
 
 namespace csharp_calcolatrice
 {
@@ -93,7 +84,7 @@ namespace csharp_calcolatrice
                 }
                 else 
                 {
-                    return 404;
+                    return int1;
                 }
             }
         }
@@ -111,7 +102,7 @@ namespace csharp_calcolatrice
                 }
                 else;
                 {
-                    return 404;
+                    return double1;
                 }
             }
         }
@@ -129,7 +120,7 @@ namespace csharp_calcolatrice
                 }
                 else 
                 {
-                    return 404;
+                    return int1;
                 }
             }
         }
@@ -147,7 +138,7 @@ namespace csharp_calcolatrice
                 }
                 else
                 {
-                    return 404;
+                    return double1;
                 }
             }
         }

@@ -64,3 +64,4 @@ double massimo2 = double.Parse(Console.ReadLine());
 double massimo = CalcoliHelper.MinimoNumero(massimo1, massimo2);
 
 Console.WriteLine($"Il massimo tra {massimo1} e {massimo2} è {massimo}");
+
