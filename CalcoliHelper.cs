@@ -14,10 +14,10 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 //- Moltiplicazione di due numeri double -----------------
 //- Valore assoluto di un numero intero ------------------
 //- Valore assoluto di un numero double -------------------
-//- Minimo tra due numeri interi
-//- Minimo tra due numeri double
-//- Massimo tra due numeri interi
-//- Massimo tra due numeri double
+//- Minimo tra due numeri interi ------------------------
+//- Minimo tra due numeri double ------------------------ 
+//- Massimo tra due numeri interi ------------------------
+//- Massimo tra due numeri double -------------------------
 
 namespace csharp_calcolatrice
 {
@@ -63,9 +63,13 @@ namespace csharp_calcolatrice
                 {
                     return int1;
                 }
-                else
+                else if (int2 < int1)
                 {
                     return int2;
+                }
+                else int1 = int2;
+                {
+                    return int1;
                 }
             }
         }
